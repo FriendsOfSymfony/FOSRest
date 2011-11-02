@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the FOSRestBundle package.
+ * This file is part of the FOSRest package.
  *
  * (c) FriendsOfSymfony <http://friendsofsymfony.github.com/>
  *
@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\RestBundle\Tests\Util;
+namespace FOS\Rest\Tests\Util;
 
-use FOS\RestBundle\Util\FormatNegotiator;
+use FOS\Rest\Util\FormatNegotiator;
 
 use Symfony\Component\HttpFoundation\Request;
 

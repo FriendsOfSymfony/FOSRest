@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the FOSRestBundle package.
+ * This file is part of the FOSRest package.
  *
  * (c) FriendsOfSymfony <http://friendsofsymfony.github.com/>
  *
@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace FOS\RestBundle\Decoder;
+namespace FOS\Rest\Decoder;
 
 /**
  * Defines the interface of decoders

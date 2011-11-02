@@ -3,11 +3,10 @@
 <phpunit bootstrap="./Tests/bootstrap.php" color="true">
   <php>
     <server name="SYMFONY" value="../../../symfony/src" />
-    <server name="DOCTRINE" value="../../../doctrine-common/lib" />
   </php>
 
   <testsuites>
-    <testsuite name="FOSRestBundle">
+    <testsuite name="FOSRest">
       <directory suffix="Test.php">./Tests</directory>
     </testsuite>
   </testsuites>
