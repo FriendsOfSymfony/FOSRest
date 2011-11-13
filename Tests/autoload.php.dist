@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the FOSRestBundle package.
+ * This file is part of the FOSRest package.
  *
  * (c) FriendsOfSymfony <http://friendsofsymfony.github.com/>
  *

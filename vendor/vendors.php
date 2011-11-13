@@ -2,7 +2,7 @@
 <?php
 
 /*
- * This file is part of the FOSRestBundle package.
+ * This file is part of the FOSRest package.
  *
  * (c) FriendsOfSymfony <http://friendsofsymfony.github.com/>
  *
@@ -23,8 +23,8 @@ foreach ($deps as $dep) {
 
     $installDir = $vendorDir.'/'.$name;
     if (!is_dir($installDir)) {
-        system(sprintf('git clone %s %s', escapeshellarg($url), escapeshellarg($installDir)));
+        system(sprintf('git clone -q %s %s', escapeshellarg($url), escapeshellarg($installDir)));
     }
 
-    system(sprintf('cd %s && git fetch origin && git reset --hard %s', escapeshellarg($installDir), escapeshellarg($rev)));
+    system(sprintf('cd %s && git fetch -q origin && git reset --hard %s', escapeshellarg($installDir), escapeshellarg($rev)));
 }
