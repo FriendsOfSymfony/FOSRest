@@ -12,7 +12,7 @@
         },
         {
             "name": "FriendsOfSymfony Community",
-            "homepage": "https://github.com/friendsofsymfony/FOSRest/contributors"
+            "homepage": "https://github.com/FriendsOfSymfony/FOSRest/contributors"
         }
     ],
     "require": {
