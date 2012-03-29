@@ -46,6 +46,7 @@ class Codes
     const HTTP_USE_PROXY = 305;
     const HTTP_RESERVED = 306;
     const HTTP_TEMPORARY_REDIRECT = 307;
+    const HTTP_PERMANENTLY_REDIRECT = 308;  // RFC-reschke-http-status-308-07
     const HTTP_BAD_REQUEST = 400;
     const HTTP_UNAUTHORIZED = 401;
     const HTTP_PAYMENT_REQUIRED = 402;
