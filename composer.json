@@ -17,10 +17,15 @@
     ],
     "require": {
         "php":                            ">=5.3.2",
-        "symfony/http-foundation":        ">=2.0.0"
+        "symfony/http-foundation":        ">=2.0,<2.2-dev"
     },
     "autoload": {
         "psr-0": { "FOS\\Rest": "" }
     },
-    "target-dir": "FOS/Rest"
+    "target-dir": "FOS/Rest",
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.7.x-dev"
+        }
+    }
 }
