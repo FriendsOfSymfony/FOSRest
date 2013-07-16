@@ -72,6 +72,7 @@ class FormatNegotiator implements FormatNegotiatorInterface
         $keys = array_keys($mimetypes, $max);
 
         $formats = array();
+        $catchAllMatched = false;
         foreach ($keys as $mimetype) {
             unset($mimetypes[$mimetype]);
             if ($mimetype === '*/*') {
