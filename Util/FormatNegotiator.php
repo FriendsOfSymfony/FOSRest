@@ -72,10 +72,12 @@ class FormatNegotiator implements FormatNegotiatorInterface
         $keys = array_keys($mimetypes, $max);
 
         $formats = array();
+        $catchAllMatched = false;
         foreach ($keys as $mimetype) {
             unset($mimetypes[$mimetype]);
             if ($mimetype === '*/*') {
-                return reset($priorities);
+                $catchAllMatched = true;
+                continue;
             }
             $format = $request->getFormat($mimetype);
             if ($format) {
@@ -86,6 +88,10 @@ class FormatNegotiator implements FormatNegotiatorInterface
                     $formats[$format] = count($priorities);
                 }
             }
+        }
+
+        if (empty($formats) && $catchAllMatched) {
+            return reset($priorities);
         }
 
         if (empty($formats) && !empty($mimetypes)) {
