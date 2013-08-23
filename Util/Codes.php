@@ -19,6 +19,9 @@ namespace FOS\Rest\Util;
  * (last updated 2012-02-13).
  *
  * Unless otherwise noted, the status code is defined in RFC2616.
+ * 
+ * Note: Symfony 2.4 will have the same constants in the Response class:
+ * https://github.com/symfony/symfony/pull/8820
  *
  * @author Jordi Boggiano <j.boggiano@seld.be>
  * @author Markus Lanthaler <markus.lanthaler@gmx.net>
