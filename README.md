@@ -8,3 +8,5 @@ The main goals for now are to provide ways for decoding request bodies
 and request format negotiation (inspired by Apache mod_negotiation)
 
 [![Build Status](https://secure.travis-ci.org/FriendsOfSymfony/FOSRest.png)](http://travis-ci.org/FriendsOfSymfony/FOSRest)
+
+Deprecated in favor of https://github.com/willdurand/Negotiation and https://github.com/FriendsOfSymfony/FOSRestBundle
